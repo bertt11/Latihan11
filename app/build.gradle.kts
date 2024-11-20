@@ -1,14 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+
+    //10.03
+    alias(libs.plugins.kotlinParcelize)
 }
 
 android {
-    namespace = "robert.paba.latihan11"
+    namespace = "robert.paba.recyclerview"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "robert.paba.latihan11"
+        applicationId = "robert.paba.recyclerview"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -45,4 +48,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.picasso)
+
+    //codelab11
+    implementation(libs.gson)
 }
