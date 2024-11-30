@@ -1,5 +1,6 @@
 package robert.paba.latihan11
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +11,11 @@ import androidx.recyclerview.widget.RecyclerView
 import robert.paba.Latihan11.R
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        _rvTask = findViewById<RecyclerView>(R.id.rvTask)
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
@@ -20,4 +25,13 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+    private lateinit var _nama : Array<String>
+    private lateinit var _tanggal : Array<String>
+    private lateinit var _kategori : Array<String>
+    private lateinit var _deskripsi : Array<String>
+
+    private var arTask = arrayListOf<Task>()
+
+    private lateinit var _rvTask : RecyclerView
 }
