@@ -6,31 +6,58 @@
     android:orientation="horizontal"
     android:padding="8dp">
 
-    <Button
-        android:id="@+id/btnHapus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="HAPUS" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+        <TextView
+            android:id="@+id/tvTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/btnUbah"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="UBAH"
-        android:layout_marginStart="8dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="bottom"
+            >
 
-    <Button
-        android:id="@+id/btnKerjakan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="KERJAKAN"
-        android:layout_marginStart="8dp" />
 
-    <Button
-        android:id="@+id/btnSelesai"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SELESAI"
-        android:layout_marginStart="8dp"
-        android:visibility="gone" />
-</LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnHapus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HAPUS"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnUbah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UBAH"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnKerjakan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KERJAKAN"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnSelesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELESAI"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:visibility="gone" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView></LinearLayout>
