@@ -6,19 +6,46 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAMA TASK :"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:paddingLeft="8dp"/>
+
     <EditText
         android:id="@+id/etNamaTask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nama Task"
+        android:hint="Nama"
         android:padding="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TANGGAL :"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="8dp"/>
 
     <EditText
         android:id="@+id/etTanggal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tanggal"
+        android:hint="DD/MM/YYYY"
         android:padding="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KATEGORI :"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="8dp"/>
 
     <EditText
         android:id="@+id/etKategori"
@@ -26,6 +53,15 @@
         android:layout_height="wrap_content"
         android:hint="Kategori"
         android:padding="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESKRIPSI :"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="8dp"/>
 
     <EditText
         android:id="@+id/etDeskripsi"

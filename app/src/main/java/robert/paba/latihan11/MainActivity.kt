@@ -10,18 +10,14 @@ import androidx.recyclerview.widget.RecyclerView
 import robert.paba.Latihan11.R
 
 class MainActivity : AppCompatActivity() {
-
-
-    private lateinit var adapter: TaskAdapter
-    private val tasks = mutableListOf(
-        Task(1, TaskStatus.TABLE1),
-        Task(2, TaskStatus.TABLE1),
-        Task(3, TaskStatus.TABLE1)
-    )
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
     }
 }
