@@ -6,7 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import robert.paba.recyclerview.R
+import robert.paba.Latihan11.R
 
 class halaman_tambah : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")

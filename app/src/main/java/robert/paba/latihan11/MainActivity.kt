@@ -7,11 +7,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import robert.paba.recyclerview.R
+import robert.paba.Latihan11.R
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var recyclerView: RecyclerView
+
     private lateinit var adapter: TaskAdapter
     private val tasks = mutableListOf(
         Task(1, TaskStatus.TABLE1),
@@ -23,19 +23,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        recyclerView = findViewById(R.id.recyclerView)
-        adapter = TaskAdapter(tasks,
-            onKerjakanClick = { task ->
-                task.status = TaskStatus.TABLE2
-                adapter.notifyDataSetChanged()
-            },
-            onSelesaiClick = { task ->
-                task.status = TaskStatus.TABLE3
-                adapter.notifyDataSetChanged()
-            }
-        )
-
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = adapter
     }
 }
