@@ -3,28 +3,53 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:padding="8dp">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        >
-        <TextView
-            android:id="@+id/tvTask"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAMA TASK"
+        android:textSize="18dp"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DD/MM/YYYY"
+        android:textSize="18dp"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KATEGORI"
+        android:textSize="18dp"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvDeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESKRIPSI"
+        android:textSize="18dp"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="5dp"/>
 
         <LinearLayout
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:weightSum="3"
             android:gravity="bottom"
             >
-
-
-
 
         <Button
             android:id="@+id/btnHapus"
@@ -59,5 +84,4 @@
             android:visibility="gone" />
         </LinearLayout>
 
-
-    </androidx.cardview.widget.CardView></LinearLayout>
+    </LinearLayout>
