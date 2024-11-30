@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "robert.paba.Latihan11"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "robert.paba.Latihan11"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 

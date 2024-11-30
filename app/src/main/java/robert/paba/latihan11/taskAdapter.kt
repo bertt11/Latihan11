@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import robert.paba.Latihan11.R
 
-class taskAdapter (private val listTask: ArrayList<Task>) : RecyclerView.Adapter<taskAdapter.ListViewHolder>(){
+class taskAdapter(private val listTask: List<Task>) : RecyclerView.Adapter<taskAdapter.ListViewHolder>(){
 
     inner class ListViewHolder(itemView:View) : RecyclerView.ViewHolder(itemView) {
         var _namaTask = itemView.findViewById<TextView>(R.id.tvNama)
